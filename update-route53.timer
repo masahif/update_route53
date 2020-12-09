@@ -1,0 +1,10 @@
+[Unit]
+Description=update route53 record
+
+[Timer]
+OnBootSec=3min
+OnUnitActiveSec=30min
+Unit=update-route53.service
+
+[Install]
+WantedBy=timers.target

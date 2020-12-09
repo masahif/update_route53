@@ -1,0 +1,11 @@
+[Unit]
+Description=update route53 record
+After=network.service
+
+[Service]
+Restart=no
+Type=simple
+ExecStart=/usr/local/sbin/update-route53.sh
+
+[Install]
+WantedBy=multi-user.target
