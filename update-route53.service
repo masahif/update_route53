@@ -6,6 +6,8 @@ After=network.service
 Restart=no
 Type=simple
 ExecStart=/usr/local/sbin/update-route53.sh
+User=ec2-user
+Group=ec2-user
 
 [Install]
 WantedBy=multi-user.target
